@@ -1,0 +1,19 @@
+extends base
+block content
+  .container-fluid.main_header.my-5
+    .row
+      .col-md-10.col-12.mx-auto
+        .main_content
+          .temp_form
+            input#cityName(type="text" placeholder="Enter city Name" autocomplete="off")
+            input#submitBtn(type="submit" value="search")
+        .tempInformation
+          .top_layer
+            p#day Sunday
+            p#today_date  13 OCT
+          .main_layer
+            p#city_name.text-center Get Output Here
+            .middle_layer.data-hide
+              p#temp 
+              p#temp_status
+                //- i.fa.fa-cloud(aria-hidden="true")

@@ -1,0 +1,20 @@
+.container-fluid.main_menu
+  .row
+    .col-md-10.col-12.mx-auto
+      nav.navbar.navbar-expand-lg
+        a.navbar-brand(href="#")
+          i.fa.fa-snowflake(aria-hidden="true")
+          |  Weather App
+          i.fa.fa-snowflake(aria-hidden="true")
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link.mx-4(href="/")
+                | Home 
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link.mx-4(href="/weather") Weather
+            li.nav-item
+              a.nav-link.mx-4(href="/about") About

@@ -1,0 +1,31 @@
+extends base
+block content
+  .container-fluid.main_header
+    .row
+      .col-md-10.col-12.mx-auto
+        .row
+          // left side div
+          .align-self-sm-center.col-12.col-md-6.flex-column.justify-content-center.main_header_left
+            p Welcome to Weather App
+            h1
+              | Get The Latest 
+              span.text-color  Weather 
+              |  Info of Your City
+            a(href="/weather")
+              button Check Now
+          // right side div
+          .align-self-sm-center.col-12.col-md-6.flex-column.justify-content-center.main_header_right
+            #carouselExampleInterval.carousel.slide(data-ride="carousel")
+              .carousel-inner
+                .carousel-item.active(data-interval="10000")
+                  img.d-block.w-100(src="/img/snowfall.webp" alt="...")
+                .carousel-item(data-interval="2000")
+                  img.d-block.w-100(src="/img/rain.webp" alt="...")
+                .carousel-item
+                  img.d-block.w-100(src="/img/suny.png" alt="...")
+              a.carousel-control-prev(href="#carouselExampleInterval" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselExampleInterval" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
